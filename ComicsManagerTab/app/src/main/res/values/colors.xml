@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="primary">#d9d9d9</color>
+    <color name="primary_pressed">#303f9f</color>
+    <color name="ripple">#ff80ab</color>
+    <color name="accent">#ff4081</color>
+    <color name="accent_pressed">#f50057</color>
+    <color name="date">#33b5e5</color>
+    <color name="dia_actual">#ee0b3d</color>
+    <color name="text_warning">#d61515</color>
+    <color name="text_normal">#0a15ff</color>
+    <color name="text_ready">#14a514</color>
+    <color name="help_view">#ff404040</color>
+    <color name="my_primary">#1a237e</color>
+    <color name="my_primary_dark">#7986cb</color>
+    <color name="my_accent">#3949ab</color>
+    <color name="black_semi_transparent">#B2000000</color>
+    <color name="background">#e5e5e5</color>
+    <color name="half_black">#808080</color>
+    <color name="white">#fafafa</color>
+    <color name="white_pressed">#f1f1f1</color>
+    <color name="pink">#e91e63</color>
+    <color name="pink_pressed">#ec407a</color>
+    <color name="blue_semi_transparent">#805677fc</color>
+    <color name="blue_semi_transparent_pressed">#80738ffe</color>
+    <color name="text_disabled">#bdbdbd</color>
+    <color name="action_bar_blue">#64b5f6</color>
+    <color name="item_on_shopping_cart">#a03e20</color>
+</resources>

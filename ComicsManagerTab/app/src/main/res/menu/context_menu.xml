@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:id="@+id/action_cart"
+        android:icon="@drawable/ic_add_shopping_cart_white_24dp"
+        android:title="@string/shopping_cart"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_comprar"
+        android:icon="@drawable/ic_shop_white_24dp"
+        android:title="@string/strComprar"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_remove_cart"
+        android:icon="@drawable/ic_remove_shopping_cart_white_24dp"
+        android:title="@string/remove_cart"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_editar"
+        android:icon="@drawable/ic_action_edit"
+        android:title="@string/strEditar"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_borrar"
+        android:icon="@android:drawable/ic_menu_delete"
+        android:title="@string/strBorrar"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_borrar_todo"
+        android:title="@string/strBorrarTodo"
+        android:icon="@drawable/shopping_cart_drop"
+        />
+
+</menu>

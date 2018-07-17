@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/border_ui">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/fechaRec"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.05"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/tituloRec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/numeroRec"
+            android:layout_toRightOf="@+id/fechaRec"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/numeroRec"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="TextView"
+            android:textColor="@color/text_normal" />
+
+        <TextView
+            android:id="@+id/precioRec"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/fechaRec"
+            android:text="TextView"
+            android:textColor="@color/text_normal" />
+
+        <TextView
+            android:id="@+id/editorialRec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tituloRec"
+            android:layout_below="@+id/tituloRec"
+            android:text="TextView"
+            android:textColor="@color/text_normal" />
+
+        <TextView
+            android:id="@+id/periRec"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/editorialRec"
+            android:layout_alignBottom="@+id/editorialRec"
+            android:layout_alignParentRight="true"
+            android:text="TextView"
+            android:textColor="@color/text_normal" />
+
+    </RelativeLayout>
+</LinearLayout>
