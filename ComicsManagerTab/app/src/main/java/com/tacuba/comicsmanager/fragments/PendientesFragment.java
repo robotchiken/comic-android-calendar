@@ -121,7 +121,7 @@ public class PendientesFragment extends Fragment {
             }
             @Override
             public void onDestroyActionMode(ActionMode mode) {
-
+                listSelected = new ArrayList<InfoComic>();
             }
         };
         listView.setMultiChoiceModeListener(mMultiChoiceModeListener);

@@ -3,8 +3,6 @@ package com.tacuba.comicsmanager.fragments;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.view.ActionMode;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -17,12 +15,10 @@ import android.widget.ListView;
 import com.tacuba.comicsmanager.Constantes;
 import com.tacuba.comicsmanager.R;
 import com.tacuba.comicsmanager.adapters.MultipleListSelectedAdapter;
-import com.tacuba.comicsmanager.adapters.MyShoppingCartRecyclerViewAdapter;
 import com.tacuba.comicsmanager.dao.AndroidFacade;
 import com.tacuba.comicsmanager.dialogs.EditorComicsDialog;
 import com.tacuba.comicsmanager.dto.InfoComic;
 import com.tacuba.comicsmanager.singletons.ShoppingCart;
-import com.tacuba.comicsmanager.utils.MyDateUtils;
 import com.tacuba.comicsmanager.utils.Utility;
 
 import java.util.ArrayList;
@@ -116,7 +112,7 @@ public class ShoppingCartFragment extends Fragment {
             }
             @Override
             public void onDestroyActionMode(ActionMode mode) {
-
+                listSelected = new ArrayList<InfoComic>();
             }
         };
         listView.setMultiChoiceModeListener(mMultiChoiceModeListener);
