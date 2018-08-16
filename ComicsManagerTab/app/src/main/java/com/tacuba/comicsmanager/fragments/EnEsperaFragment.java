@@ -111,7 +111,7 @@ public class EnEsperaFragment extends Fragment {
             }
             @Override
             public void onDestroyActionMode(ActionMode mode) {
-
+                listSelected = new ArrayList<InfoComic>();
             }
         };
         listView.setMultiChoiceModeListener(mMultiChoiceModeListener);

@@ -4,7 +4,6 @@ import android.app.ActionBar;
 import android.app.Activity;
 import android.content.Context;
 import android.graphics.Color;
-import android.net.Uri;
 import android.os.Bundle;
 
 import android.support.v4.app.Fragment;
@@ -22,7 +21,6 @@ import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.tacuba.comicsmanager.Constantes;
 import com.tacuba.comicsmanager.R;
@@ -187,7 +185,7 @@ public class CalendarFragment extends Fragment  {
                     listAdapter = new MultipleListSelectedAdapter(getActivity().getApplicationContext(), R.layout.comic_list_adapter, listaComics,true);
                     listCalendarView.setAdapter(listAdapter);
                 }else{
-                    Toast.makeText(getActivity().getApplicationContext(),"No existen Comics en esa Fecha ",Toast.LENGTH_LONG).show();
+                    //Toast.makeText(getActivity().getApplicationContext(),"No existen Comics en esa Fecha ",Toast.LENGTH_LONG).show();
                     listCalendarView.setAdapter(null);
                     mListener.onFragmentInteraction(View.VISIBLE);
                 }
@@ -263,8 +261,10 @@ public class CalendarFragment extends Fragment  {
 
             @Override
             public void onDestroyActionMode(ActionMode mode) {
-
+                listSelected = new ArrayList<InfoComic>();
             }
+
+
         };
         listCalendarView.setMultiChoiceModeListener(mMultiChoiceModeListener);
 
